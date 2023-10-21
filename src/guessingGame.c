@@ -32,6 +32,22 @@ int main(int argc, char **argv) {
 
   //TODO: place your code here
 
-  printf("Congratulations, you found it!  Number of guesses: %d\n", numGuesses);
+    while (1) {
+       
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        numGuesses++;
+        if (guess == number) {
+            printf("Congratulations, you found it! Number of guesses: %d\n", numGuesses);
+            break;
+        } else if (guess < number) {
+            printf("Too low! Try again.\n");
+        } else {
+            printf("Too high! Try again.\n");
+        }
+    }
+  
   return 0;
 }
+
+
