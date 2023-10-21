@@ -51,3 +51,34 @@ int main(int argc, char **argv) {
 }
 
 
+/*
+OUTPUT:
+Guess-A-Number Game!
+Enter a number between 1 and 1000
+Enter your guess: 500
+Too high! Try again.
+Enter your guess: 200
+Too low! Try again.
+Enter your guess: 300
+Too low! Try again.
+Enter your guess: 400
+Too low! Try again.
+Enter your guess: 450
+Too high! Try again.
+Enter your guess: 425
+Too high! Try again.
+Enter your guess: 415
+Too high! Try again.
+Enter your guess: 410
+Too high! Try again.
+Enter your guess: 405
+Too low! Try again.
+Enter your guess: 406
+Too low! Try again.
+Enter your guess: 407
+Too low! Try again.
+Enter your guess: 408
+Too low! Try again.
+Enter your guess: 409
+Congratulations, you found it! Number of guesses: 13
+*/
