@@ -29,6 +29,17 @@ int main(int argc, char **argv) {
     printf("%d ", i);
   }
   printf("\n");
+  
+
+  //Answer 
+
+    int i = 10;
+    while (i < 20) {
+        printf("%d ", i);
+        i += 3;
+    }
+    printf("\n");
+
 
   //2. Rewrite the given while loop as an equivalent for loop
   int k = 3;
