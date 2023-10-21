@@ -61,7 +61,7 @@ int main(int argc, char **argv) {
   //   the last one; example: 1, 2, 3, 4, 5
 
 //Answer
-    int n, i;
+  
 
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -73,13 +73,13 @@ int main(int argc, char **argv) {
             printf("%d", i);
         }
     }
-
+ printf("\n");
 
   //4. Print squares of numbers 1 thru n separated by a comma
   //   except for the last one; example: 1, 4, 9, 16, 25
 
 //Answer
-    int n, i;
+   
     printf("Enter a number: ");
     scanf("%d", &n); 
 
@@ -97,11 +97,11 @@ int main(int argc, char **argv) {
   //   the result; example: 1 + 2 + 3 + 4 + 5 = 15
 
 //Answer
-    int n, sum = 0;
+    int sum;
     printf("Enter a positive integer (n): ");
     scanf("%d", &n);
     for (int i = 1; i <= n; i++) {
-        sum += i;
+        sum =sum + i;
     }
     printf("Sum of numbers 1 to %d = %d\n", n, sum);
     
@@ -110,7 +110,7 @@ int main(int argc, char **argv) {
   //   and print the result; example: 1^2 + 2^2 + 3^2 + 4^2 + 5^2 = 55
 
 //Answer
-    int n, sum = 0;
+   
     printf("Enter a positive integer n: ");
     scanf("%d", &n);
     for (int i = 1; i <= n; ++i) {
@@ -122,7 +122,7 @@ int main(int argc, char **argv) {
   //   the result; example (n=5): 2 + 4 = 6
 
 //Answer
-    int n, sum = 0;
+  
     printf("Enter the value of n: ");
     scanf("%d", &n);
     for (int i = 1; i <= n; i++) {
@@ -139,5 +139,24 @@ int main(int argc, char **argv) {
   //   the integer is divisible by both 7 and 11, print "FooBar"
   //   instead.
 
+
+//Answer
+void fooBarFizzBuzz(int n) {
+    for (int i = 1; i <= n; ++i) {
+        if (i % 7 == 0 && i % 11 == 0) {
+            printf("FooBar\n");
+        } else if (i % 7 == 0) {
+            printf("Foo\n");
+        } else if (i % 11 == 0) {
+            printf("Bar\n");
+        } else {
+            printf("%d\n", i);
+        }
+    }
+}
+   
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    fooBarFizzBuzz(n);
   return 0;
 }
